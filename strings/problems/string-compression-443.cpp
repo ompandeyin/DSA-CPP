@@ -19,10 +19,14 @@ public:
             }
 
             chars[idx++] = ch;
+            
 
-            if (count > 1) {
+            if(count == 1){
+                chars[idx++] = ch;
+            }else{
+                chars[idx++] = ch;
                 string str = to_string(count);
-                for (char dig : str) {
+                for(char dig : str){
                     chars[idx++] = dig;
                 }
             }
